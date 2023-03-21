@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+    <style>
+        body {
+            background: url(img.jfif);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        h1 {
+            color: rgb(240, 42, 240);
+            background-color: transparent;
+            text-decoration: dotted;
+            text-align: center;
+            text-decoration: underline;
+        }
+        h2 {
+            color: rgb(14, 139, 248);
+            background-color: transparent;
+            text-decoration: dotted;
+            text-align: center;
+            text-decoration: underline;
+        }
+        fieldset {
+
+            margin-right: 30%;
+            margin-left: 30%;
+        }
+        label {
+            color: aliceblue;
+        }
+        input {
+            border-radius: 8px;
+            border-color: rgb(119, 158, 216);
+        }
+        legend {
+            color: aliceblue;
+            font-size: 20px;
+            font-family: sans-serif;
+            color: rgb(212, 233, 95);
+        }
+        p {
+            color: aliceblue;
+        }
+        h3 {
+            color: wheat;
+            font-size: 25px;
+            text-align: center;
+            font-style: italic;
+        }
+        button {
+            height: 40px;
+            width: 80px;
+            margin-left: 50%;
+            margin-right: 40%;
+            align-items: center;
+            color: black;
+            border: 2px solid rgb(22, 201, 228);
+            border-width: 3px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Seat Reservation System </h1>
+    <h2>Please fill required information to reserve your seat</h2>
+    <form action="url.php" method="get">
+        <fieldset>
+            <legend> Personal information</legend>
+            <label>Name:<br><input type="text" name="name" size="65px"></label><br><br>
+            <label> Email:<br><input type="email" name="email" size="65px"></label> <br><br>
+            <label>Number:<br><input type="text" name="number" size="65px"></label> <br><br>
+        </fieldset> &nbsp;
+        <fieldset>
+            <legend> Login information</legend>
+            <label>Username:<br><input type="text" name="name" size="65px"></label> <br><br>
+            <label> Password:<br><input type="Password" name="password" size="65px"></label><br>
+            <p>Why do you want to reserve seat in our sevives?</p>
+            <textarea name="comment" id="" cols="65" rows="3">write your comment here</textarea> <br>
+        </fieldset> &nbsp;
+        <fieldset>
+            <legend> Services</legend>
+            <p>Select best way you want</p>
+            <label> Faislabad: <input type="radio" name="way"></label> <br><br>
+            <label> lahore: <input type="radio" name="way"></label> <br><br>
+            <label> Multan: <input type="radio" name="way"></label> <br><br>
+        </fieldset> &nbsp;
+        <fieldset>
+            <legend> Seats</legend>
+            <p>Select best no. of seats you want to reserve</p>
+            <label> 01-10: <input type="checkbox" name="seat"></label> <br><br>
+            <label> 15-23: <input type="checkbox" name="seat"></label> <br><br>
+            <label> 30-35: <input type="checkbox" name="seat"></label> <br><br>
+            <label> 40-43: <input type="checkbox" name="seat"></label> <br><br>
+            <label> 50-56: <input type="checkbox" name="seat"></label> <br><br>
+        </fieldset> &nbsp;
+        <fieldset>
+            <legend>Music</legend>
+            <p>Which type pf music you want to listen in travelling</p>
+            <select name="music" id="">
+                <option value="fast">Fast</option>
+                <option value="classical">Classical</option>
+                <option value="None">None</option>
+            </select>
+            <form action="url.php" method="post">
+                <p>If you want to listen your favourite music then share it below</p>
+                <input type="file" name="user file">
+                <input type="submit" value="upload">
+            </form>
+        </fieldset>
+    </form><br>
+    <button>Submit</button>
+    <h3>Thank you so much........! <br> Your seat has been reserved</h3>
+</body>
+</html>
